@@ -21,7 +21,7 @@ Regression model을 학습한다는 것은 하나의 가설을 세울 필요가 
 m: 데이터 갯수, y: true
 W와 b를 조정하여 가장 작은 값을 가지도록 하는 것이 학습이다. 
 
-![costfunction](img/costfunction.png)
+<img src="img/costfunction.png" width="600px"/>
 
 
 ### 1.3 minimize cost(W,b) 
@@ -45,7 +45,7 @@ W와 b를 조정하여 가장 작은 값을 가지도록 하는 것이 학습이
    3.2 Has an interesting property 
    (Where you start can determine which minimum you end up)
 
-![Gradient descent algorithm](img/gradient_descent_algorithm.png)
+<img src="img/gradient_descent_algorithm.png" width="600px"/>
 
 ### Convex function 
 > 밥그릇 형태를 띄는 것을 의미
