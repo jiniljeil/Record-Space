@@ -29,11 +29,11 @@ Attention은 속성과 관계없는 단어들의 가중치는 낮게 학습하�
   Attention 기반의 비지도 속성 추출 모델을 사용하였다. Attenetion 모델은 입력한 정보 중에서도 해결하는 문제와 가장 적합한 정보에 집중하는 특성이 있다. ABAE는 임베딩 공간에서 각 속성을 나타내는 대표 단어를 통해 해석이 가능한 속성 임베딩을 학습하는 것을 목표로 한다. 
 
   #### ABAE Structure
-  <img src="images/ABAE.png"/> 
+  <img src="images/ABAE.png" width="400px"/> 
 
   Attention 가중치는 각 단어가 문장의 핵심 주제를 알아내는데 얼마나 주목할 만한지를 확률로 나타낸다.
 
-  <img src="images/cost_func.png"/>
+  <img src="images/cost_func.png" width="400px"/>
 
   - #### :star: 재구성(reconstruction) 오류를 최소화 방안
     부정표본 (nagative sample) $n_i$를 무작위로 추출하고, 재구성된 $r_s$가 $z_s$와는 유사하되 $n_i$와는 다르도록 식 (7)을 목적함수로 지정한 후 학습
@@ -43,4 +43,4 @@ Attention은 속성과 관계없는 단어들의 가중치는 낮게 학습하�
 
 ## 구조
 
-<img src="images/framework.png"/>
+<img src="images/framework.png" width="500px"/>
