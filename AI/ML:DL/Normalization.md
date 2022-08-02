@@ -18,7 +18,10 @@
 > 모든 feature에 대해 각각의 최소값 0, 최대값 1로, 나머지 값들은 0과 1 사이의 값으로 변환하는 방법 
 
 ### Expression
-<strong>( X - MIN ) / (MAX - MIN)</strong>
+
+$$
+\frac{X-MIN}{MAX-MIN}
+$$
 
 ### 단점
 <strong>이상치에 큰 영향을 받는다.</strong>
@@ -28,7 +31,10 @@
 > 이상치(outlier)문제를 해결하기 위한 방법으로써 표준화를 진행하여 정규화 수행
 
 ### Expression
-<strong>Z = (X - 평균) / 표준편차</strong>
+
+$$
+Z = \frac{X - m}{\sigma}
+$$
 
 ### Python
 ```python 

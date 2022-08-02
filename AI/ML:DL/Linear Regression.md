@@ -45,7 +45,9 @@ W와 b를 조정하여 가장 작은 값을 가지도록 하는 것이 학습이
    3.2 Has an interesting property 
    (Where you start can determine which minimum you end up)
 
-<img src="img/gradient_descent_algorithm.png" width="600px"/>
+$$
+W:= W - \alpha \frac{1}{m}\sum_{i=1}^{m}(Wx^{(i)}-y{(i)})x^{(i)}
+$$
 
 ### Convex function 
 > 밥그릇 형태를 띄는 것을 의미

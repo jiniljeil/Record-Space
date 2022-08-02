@@ -29,7 +29,7 @@ Logistic Regression은 0 또는 1로 예측 값을 설정해주어야 합니다.
 
 Logistic Hypothesis를 아래와 같이 설정해주었다고 가정해봅시다. 
 
-<img src="img/logistic_hypothesis.png" width="600px"/>
+$H(x) = \frac{1}{(1+e^{W^TX})}$
 
 ### Cost function
   
@@ -39,7 +39,9 @@ Logistic Hypothesis를 아래와 같이 설정해주었다고 가정해봅시다
 
 이를 해결하기 위해, Logistic을 새로운 Cost function을 아래와 같이 정의할 수 있습니다. (지수함수의 반대인 로그를 활용)
 
-<img src="img/logistic_cost_function.png" width="600px">
+$$
+c(H(x),y)=-ylog(H(x))\,-\,(1-y)log(1-H(x))
+$$
 
 cost function을 y가 0일 때와 1일 때를 구분하여 그림을 그려보면, convex function과 유사한 형태를 띄는 것을 확인할 수 있을 것 입니다. 
 
