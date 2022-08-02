@@ -1,7 +1,7 @@
 # Normalization
 > 데이터 값들이 어떤 형태의 범위 안에 항상 들어가도록 해주는 방법
 
-<img src="img/data_diff.png" style="width: 550px"/>
+<img src="img/data_diff.png" style="width: 600px"/>
 
 ## 정규화를 해야하는 이유
 머신러닝 알고리즘은 데이터의 feature(특성)들을 비교하여 패턴을 찾는다.

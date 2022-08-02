@@ -1,8 +1,7 @@
 # Overfitting
 > Training dataset에만 최적화되어, Test dataset 적용 시 제대로 동작하지 않는 문제 
 
-
-![overfitting](img/overfitting.png)
+<img src="img/overfitting.png" style="width: 600px"/>
 
 왼쪽 그림을 model1, 오른쪽 그림을 model2라고 합시다. 
 model1의 경우에는 classification을 진행할 때, (-) 그룹에 (+) 요소도 포함되어 있어 (+) 요소를 test의 입력으로 주었을 경우 이전에 (+) 요소에 대한 training을 진행했었기에 이를 파악할 수 있다. 

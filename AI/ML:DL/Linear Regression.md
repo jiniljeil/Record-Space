@@ -69,7 +69,3 @@ W와 b를 조정하여 가장 작은 값을 가지도록 하는 것이 학습이
 - Gradient descent algorithm 
 
 <strong>즉, Hypothsis와 cost function을 정의한 후, 미분하는 과정을 거쳐 아래와 같은 수식을 형성한 후, gradient descent algorithm을 사용하여 최소 값을 가지는 W와 b를 찾는 과정(학습)을 통해 Linear Regression을 적용할 수 있다. (단, 적용하기 전 Convex function 형태를 띄는지 확인할 필요가 있다.)</strong>
-
-
-
-

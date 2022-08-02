@@ -23,13 +23,13 @@ Logistic Regression은 0 또는 1로 예측 값을 설정해주어야 합니다.
 하지만, Hypothesis는 1보다 큰 값 혹은 0보다 작은 값이 나올 수 있습니다.  
 <strong>그러므로, Logistic Hypothesis가 0 ~ 1 사이의 값이 나오게 하기 위해  sigmoid function 를 사용합니다. </strong> 
 
-![sigmoid](img/sigmoid.png)   
+<img src="img/sigmoid.png" width="600px">
 
 이미지 출처: https://t1.daumcdn.net/cfile/tistory/275BAD4F577B669920
 
 Logistic Hypothesis를 아래와 같이 설정해주었다고 가정해봅시다. 
 
-![logistic_hypothesis](img/logistic_hypothesis.png)
+<img src="img/logistic_hypothesis.png" width="600px"/>
 
 ### Cost function
   
@@ -39,7 +39,7 @@ Logistic Hypothesis를 아래와 같이 설정해주었다고 가정해봅시다
 
 이를 해결하기 위해, Logistic을 새로운 Cost function을 아래와 같이 정의할 수 있습니다. (지수함수의 반대인 로그를 활용)
 
-![logistic_cost_function](img/logistic_cost_function.png) 
+<img src="img/logistic_cost_function.png" width="600px">
 
 cost function을 y가 0일 때와 1일 때를 구분하여 그림을 그려보면, convex function과 유사한 형태를 띄는 것을 확인할 수 있을 것 입니다. 
 
