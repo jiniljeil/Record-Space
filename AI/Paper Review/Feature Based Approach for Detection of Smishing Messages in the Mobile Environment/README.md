@@ -50,102 +50,125 @@ Journal of Information Technology ResearchVolume 12Issue 2Apr 2019 pp 17–35. h
    SVM (Support Vector Machine), Logistic Regression, Neural networks, Naive Bayes, Random Forest 
 
 ### 3.3 특징 추출 방법
-$F={F_1,F_2,F_3,...,F_{10}}$ 중 $(F_1,F_2)$는 일반적으로 ham 문자에서 등장, $(F_3,..,F_8)$은 일반적으로 smishing 문자에서 등장한다.  
+$F={F_1,F_2,F_3,...,F_{10}}$ 중 $(F_1,F_2)$는 일반적으로 ham 문자에서 등장, $(F_3,..,F_8)$은 일반적으로 smishing 문자에서 등장한다.
    
 본 논문에서는 정상 문자의 경우 0을 스미싱의 경우 1로 지정하였다.   
    
 $$
-value = \begin {cases} 1,\;\text{smishing}\\0,\;\text{ham}\end {cases}
+    value = 
+        \begin {cases}
+        1,\;\text{smishing}\\
+        0,\;\text{ham}
+        \end {cases}
 $$
 
 1. Greetings keywords
    ex. Good Morning, Good Afternoon, Good evening, etc.
-   $$
+
+$$
     F_1 = 
         \begin {cases}
         0,\;\text{if\,message\,contains\,any\,greeting\,token}\\
         1,\;\text{otherwise}
         \end{cases}
-    $$
+$$
+
 2. Presence of emotions
    ex. ":)", ":(", etc.
-    $$
+
+$$
     F_2 = 
         \begin {cases}
         0,\;\text{message\,contains\,positive\,or\,negative\,emotions}\\
         1,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 3. Presence of URL 
    Long URL로 전환
-    $$
+
+$$
     F_3 = 
         \begin {cases}
         1,\;\text{if\,URL\,present\,in\,message}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 4. Presence of Mathematical Symbols 
     '+', '%', '-', '/', '^' 수학 기호 확인
-    $$
+
+$$
     F_4 = 
         \begin {cases}
         1,\;\text{if\,message\,contains\,mathematical\,symbol}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 5. Message length
    공백, 기호, 특수 문자 등을 포함한 문자 길이
-    $$
+
+$$
     F_5 = 
         \begin {cases}
         1,\;\text{if\,message\,length}\geq\text{150}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 6. Self Answering Message
    'yes', 'no'를 묻는 메세지
-    $$
+
+$$
     F_6 = 
         \begin {cases}
         1,\;\text{message\,is\,self\,answered\,type}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 7. Smishing symbol 
    '\$' (Dollar), '£' (Pound) 
-    $$
+
+$$
     F_7 = 
         \begin {cases}
         1,\;\text{if\,message\,contain\,any\,smishing\,symbol}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 8. Smishing keywords
    award, congratulation, winner, alert, claim, activate, verify, attempts, gift voucher, blocked, suspend, unlock, won, prize, subscribe, activity, update, coupon, refund
-    $$
+
+$$
     F_8 = 
         \begin {cases}
         1,\;\text{if\,message\,contain\,any\,smishing\,keyword}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 9.  Presence of mobile number
-    $$
+
+$$
     F_9 = 
         \begin {cases}
         1,\;\text{if\,message\,contain\,mobile\,number}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
+
 10. Presence of email address
-    $$
+
+$$
     F_{10} = 
         \begin {cases}
         1,\;\text{if\,message\,contain\,email\,address}\\
         0,\;\text{otherwise}
         \end {cases}
-    $$
+$$
 
 ## 4. 데이터 셋 & 평가
 
