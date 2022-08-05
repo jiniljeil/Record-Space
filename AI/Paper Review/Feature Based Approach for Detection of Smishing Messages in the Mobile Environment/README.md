@@ -57,8 +57,8 @@ $F={F_1,F_2,F_3,...,F_{10}}$ 중 $(F_1,F_2)$는 일반적으로 ham 문자에서
 $$
     value = 
         \begin {cases}
-        1,\,\text{smishing}\\
-        0,\,\text{ham}
+        1, \text{smishing}\\
+        0, \text{ham}
         \end {cases}
 $$
 
