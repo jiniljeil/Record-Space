@@ -68,8 +68,8 @@ $$
 $$
     F_1 = 
         \begin {cases}
-        0,\,\text{if\,message\,contains\,any\,greeting\,token}\\
-        1,\,\text{otherwise}
+        0, \text{if message contains any greeting token}\\
+        1, \text{otherwise}
         \end{cases}
 $$
 
@@ -79,8 +79,8 @@ $$
 $$
     F_2 = 
         \begin {cases}
-        0,\,\text{message contains positive or negative emotions}\\
-        1,\,\text{otherwise}
+        0, \text{message contains positive or negative emotions}\\
+        1, \text{otherwise}
         \end {cases}
 $$
 
@@ -90,8 +90,8 @@ $$
 $$
     F_3 = 
         \begin {cases}
-        1,\,\text{if\,URL\,present\,in\,message}\\
-        0,\,\text{otherwise}
+        1, \text{if URL present in message}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
@@ -101,8 +101,8 @@ $$
 $$
     F_4 = 
         \begin {cases}
-        1,\,\text{if\,message\,contains\,mathematical\,symbol}\\
-        0,\,\text{otherwise}
+        1, \text{if message contains mathematical symbol}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
@@ -112,8 +112,8 @@ $$
 $$
     F_5 = 
         \begin {cases}
-        1,\,\text{if\,message\,length}\geq\text{150}\\
-        0,\,\text{otherwise}
+        1, \text{if message length}\geq\text{150}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
@@ -123,8 +123,8 @@ $$
 $$
     F_6 = 
         \begin {cases}
-        1,\,\text{message\,is\,self\,answered\,type}\\
-        0,\,\text{otherwise}
+        1, \text{message is self answered type}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
@@ -134,8 +134,8 @@ $$
 $$
     F_7 = 
         \begin {cases}
-        1,\,\text{if\,message\,contain\,any\,smishing\,symbol}\\
-        0,\,\text{otherwise}
+        1, \text{if message contain any smishing symbol}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
@@ -145,8 +145,8 @@ $$
 $$
     F_8 = 
         \begin {cases}
-        1,\,\text{if\,message\,contain\,any\,smishing\,keyword}\\
-        0,\,\text{otherwise}
+        1, \text{if message contain any smishing keyword}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
@@ -155,8 +155,8 @@ $$
 $$
     F_9 = 
         \begin {cases}
-        1,\,\text{if\,message\,contain\,mobile\,number}\\
-        0,\,\text{otherwise}
+        1, \text{if message contain mobile number}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
@@ -165,8 +165,8 @@ $$
 $$
     F_{10} = 
         \begin {cases}
-        1,\,\text{if\,message\,contain\,email\,address}\\
-        0,\,\text{otherwise}
+        1, \text{if message contain email address}\\
+        0, \text{otherwise}
         \end {cases}
 $$
 
