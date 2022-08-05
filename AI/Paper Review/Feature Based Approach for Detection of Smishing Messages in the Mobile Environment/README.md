@@ -79,7 +79,7 @@ $$
 $$
     F_2 = 
         \begin {cases}
-        0,\,\text{message\,contains\,positive\,or\,negative\,emotions}\\
+        0,\,\text{message contains positive or negative emotions}\\
         1,\,\text{otherwise}
         \end {cases}
 $$
