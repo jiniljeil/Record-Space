@@ -57,4 +57,4 @@ TableCalendar(
 ```
 
 ## 코드 결과
-<img src="images/table_calendar.png" width="600px"/>
+<img src="images/table_calendar.png" width="300px"/>
