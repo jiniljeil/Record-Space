@@ -1,0 +1,5 @@
+Materials/
+.DS_Store
+MathMarkdown*
+node_modules/
+*.json
