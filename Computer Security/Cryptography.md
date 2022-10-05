@@ -125,3 +125,9 @@ Cipher Text : 이해할 수 없는 언어
     <img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/vernam_cipher.png" height="200px">
 
     짧은 문장에서 유용하며, 긴 문장에서는 실용적이지 않다. 
+
+  - ### Keyed transposition
+
+## Product Cipher
+
+<img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/keyless_keyed.png" height="400px">
