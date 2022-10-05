@@ -58,9 +58,22 @@ $$
     K2\ = 2^6\ mod\ 11 = 64\ mod\ 11 = 9
 $$
 
-**문제점**
+- ### 문제점 
 "man in the middle attack" 
 
-<img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/man_in_the_middle_attack.png" height="400px">
+<img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/man_in_the_middle_attack.png" height="200px">
 
-<img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/man_in_the_middle_attack_.png" height="400px">
+<img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/man_in_the_middle_attack_.png" height="200px">
+
+- ### 해결책
+
+Asymmetric Key로 암호화하여 전달하면 "**Man in the middle attack**"을 막을 수 있다. 
+
+## Key Size
+
+키 사이즈는 Brute force 공격의 성공 확률과 반비례한다. 
+
+즉, 키 사이즈가 증가하면 암호화를 뚫기 어려워진다. 
+
+현재 권장되는 키 사이즈는 최소 256 bits 또는 512 bits이다. 
+
