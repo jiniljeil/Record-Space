@@ -122,6 +122,6 @@ Cipher Text : 이해할 수 없는 언어
 
     For instance, Poly-alphabetic Substitution Cipher 와는 달리 One-time pad 를 다시 사용하지 않음
 
-    <img src="https://github.com/jiniljeil/Record-Space/tree/master/Computer%20Security/images/vernam_cipher.png", height="200px">
+    <img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/vernam_cipher.png" height="200px">
 
     짧은 문장에서 유용하며, 긴 문장에서는 실용적이지 않다. 
