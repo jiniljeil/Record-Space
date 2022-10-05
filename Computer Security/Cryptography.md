@@ -18,13 +18,13 @@ Cipher Text : 이해할 수 없는 언어
 ## Transformation 
 
 - ### Substitution
-    In the substitution cipher technique, the characters of a plain-text message are replaced by other characters, numbers or symbols. 
+    *In the substitution cipher technique, the characters of a plain-text message are replaced by other characters, numbers or symbols.* 
 
 - ### Transposition
-    
+    *A transposition cipher does not substitute one symbol for another, instead it changes the location of the symbols.*
 
 - ### Product Cipher
-  Substitution + Transposition = Product Cipher
+    *Substitution + Transposition = Product Cipher*
 
 ## Substitution
 
