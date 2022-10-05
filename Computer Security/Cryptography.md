@@ -128,6 +128,12 @@ Cipher Text : 이해할 수 없는 언어
 
   - ### Keyed transposition
 
+    For instance, "Enemy attacks tonight". key is [3, 1, 4, 5, 2] -> [1, 2, 3, 4, 5]. The block size is 5. 
+
+    Padding : z
+
+    Encryption : "eemyn taact tkons hitzg"
+
 ## Product Cipher
 
 <img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/keyless_keyed.png" height="400px">
