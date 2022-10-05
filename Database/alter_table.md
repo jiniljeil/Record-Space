@@ -15,6 +15,7 @@ DROP COLUMN column_name;
 ```
 ## MODIFY
 ```SQL
-ALTER TABLE table_name
+ALTER TABLE table_na 
+me
 MODIFY COLUMN column_name datatype;
 ```
