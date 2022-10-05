@@ -36,18 +36,20 @@ Cipher Text : 이해할 수 없는 언어
 
     Brute-force 공격 시, 바로 해독 가능 
 
+    **Additive Cipher (Shift Cipher)**
+
+    $$    
+        C = (P + K)\ mod\ 26,\ P = (C - K)\ mod \ 26
+    $$
+    
   - ### Mono-alphabetic Cipher (one-to-one) 
   
     *Mono-alphabetic ciphers pose a difficult problem for a cryptanalyst because it can be very difficullt to crack, thanks to the high number of permutations and combinations.*
     
-    **Additive Cipher (Shift Cipher)** (경우의 수)
+    **Randomness** (경우의 수)
 
     $$
         4 \times 10^{26} = (26 \times 25 \times 24\ ...\ 2)
-    $$
-
-    $$    
-        C = (P + K)\ mod\ 26,\ P = (C - K)\ mod \ 26
     $$
 
     **한계점** 

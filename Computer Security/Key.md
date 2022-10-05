@@ -28,7 +28,7 @@ Symmetric Key, Asymmetric Key를 사용하여 암호화/복호화하는 경우
 
 *The Diffie–Hellman key exchange algorithm can be used only for key agreement, but not for encryption or decryption of messages.*
 
-<img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/diffie-hellman.png" height="400px">
+<img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/diffie-hellman.png" height="300px">
 
 <img src="https://github.com/jiniljeil/Record-Space/blob/master/Computer%20Security/images/diffie-hellman_.png" height="400px">
 
