@@ -87,7 +87,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
         대표적인 커널 함수: Gaussian, Epanechnikov, Uniform
 
         $$
-        P_{KDE}(x) = \frac{\sum_{n=1}^N K(\frac{x-x_i}{h})}{Nh^d}
+        P_{KDE}(x) = \frac{1}{Nh^d}\sum_{n=1}^N K(\frac{x-x_i}{h})
         $$
        
         ##### KDE 과정
