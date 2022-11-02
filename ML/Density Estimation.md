@@ -62,7 +62,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
       - Posterior covers all possible parameter values (and weights)
           - $P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}$
 
-      *($P(\theta|D)$: Parameter posterior, $P(\theta)$: Parameter prior, $P(D|\theta)$: Data likelihood)*
+      ( $P(\theta|D)$: Parameter posterior, $P(\theta)$: Parameter prior, $P(D|\theta)$: Data likelihood )
 
 
     ### Baysian vs MLE 
@@ -87,7 +87,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
         대표적인 커널 함수: Gaussian, Epanechnikov, Uniform
 
         $$
-        P_{KDE}(x) = \frac{\sum_{n=1}^{N}\ {K(\frac{x-x_i}{h})}}{Nh^d}
+        P_{KDE}(x) = \frac{\sum_{n=1}^N K(\frac{x-x_i}{h})}{Nh^d}
         $$
        
         ##### KDE 과정
@@ -100,7 +100,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
         h 값이 작을수록 뾰족, h 값이 클수록 완만
 
         **최적의 Bandwidth**
-        
+
         $$
         h = \sigma(\frac{4}{3N})^\frac{1}{5}
         $$
