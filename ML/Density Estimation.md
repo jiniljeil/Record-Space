@@ -30,6 +30,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
 
         **Likelihood**
         IID assumption을 따를 때, D의 Likelihood
+
         $$
         \prod_{n=1}^{N} P(d_n | \theta)
         $$
@@ -37,6 +38,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
         :bulb: **단순 Likelihood 연산을 하게 되면, 매우 작은 값에 도달하게 되어 numerical underflow가 발생할 수 있다. 그러므로, log-likelihood를 사용** 
 
         **Log-likelihood**
+
         $$
         \sum_{n=1}^{N} log\ P(d_n | \theta)
         $$
@@ -44,6 +46,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
         이와 같이, log-likelihood 연산을 사용하여 Maximum 값을 구하는 것이 MLE 이다. 
 
         **MLE formula**
+
         $$
         argmax_{\theta}\ log\ P(d_n|\theta)
         $$
@@ -57,9 +60,9 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
       - 단 하나의 파라미터 값을 뽑는 MLE의 한계점을 극복 
       - Uses the posterior distribution for parameters Θ
       - Posterior covers all possible parameter values (and weights)
-          - $ P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)} $
+          - $P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}$
 
-      *($ P(\theta|D) $: Parameter posterior, $ P(\theta)$: Parameter prior, $ P(D|\theta)$: Data likelihood)*
+      *($P(\theta|D)$: Parameter posterior, $P(\theta)$: Parameter prior, $P(D|\theta)$: Data likelihood)*
 
 
     ### Baysian vs MLE 
@@ -82,7 +85,7 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
         히스토그램을 이용한 밀도 추정은 이산적(discrete)로 binary 값을 증가시켜 불연속성을 가진다. 반면에, 커널 밀도 추정은 커널 함수를 사용하여 Smooth한 확률밀도함수(PDF)를 만들 수 있게 된다. 
 
         대표적인 커널 함수: Gaussian, Epanechnikov, Uniform
-             
+
         $$
         P_{KDE}(x) = \frac{\sum_{n=1}^{N}\ {K(\frac{x-x_i}{h})}}{Nh^d}
         $$
@@ -97,8 +100,9 @@ x = a 일 확률은 0 이지만, a에서의 밀도(density)는 f(a)로 0이 아�
         h 값이 작을수록 뾰족, h 값이 클수록 완만
 
         **최적의 Bandwidth**
-
+        
         $$
         h = \sigma(\frac{4}{3N})^\frac{1}{5}
         $$
+
         *( N: 샘플 데이터 개수, $ \sigma $: 표준 편차 )*
