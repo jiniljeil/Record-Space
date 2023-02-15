@@ -1,0 +1,262 @@
+vi 편집기 
+shift + ; + wq : 저장 후 종료
+shift + ; + q! : 저장 안하고 종료 
+
+i key : How to change the text(insert) mode in line mode
+
+<system manage>
+When root user, useradd or adduser command is possible.
+useradd , adduser
+groupadd (option -g : assign GID of group)
+usermod : change home directory, group, user information !! (option exist) 
+groupmod : change group`s name or group`s GID
+userdel : delete user (option -r : +) remove home directory)
+groupdel : delete group (Only if not an existing group)
+ 
+cat /etc/passwd : user information 
+    /etc/shadow : space stored user password
+    /etc/group  : group information 
+    /etc/gshadow : space stored group password
+
+passwd (username)
+-password change command 
+option -l : lock temporarily password of user 
+       -d : delete password of user  
+       -u : unlock password of user 
+
+gpasswd (groupname)
+-group password change command
+optino -r : password remove
+       -a : add assigned account in group
+       -d : delete assigned account in group
+       
+ls -l
+drwx------ (directory file)/(permission)
+
+command : id (print UID and GID information of the root) 
+option -g : print GID of the original group (a existing group)
+       -G : print GID of the original group and additional group 
+
+command : groups (print a list of groups you belong to)
+          groups [account] (print a list of groups account belong to)
+command : newgrp group`s name (change from the original group to group`s name)
+option -a : ex) newgrp -a [account] group`s name
+
+command : whoami (print current your account) 
+command : users (print logined account of user in current system)
+command : who (print logined all of the user information right now)
+
+command : w (who + cpu information)
+command : finger (print account information of user)
+option -l [account] : detailed information of the account 
+
+command : chfn [account] ((change)phone number, name of user, company name ,, etc) 
+option -f : changing name of the user
+       -o : changing name of the company
+       -p : changing company phone number 
+       -h : changing user home phone number 
+
+command : chage [account] (assign password expiration date)
+option -m : (MIN)
+       -M : (MAX)
+       -W : (WARNING)
+       -I : (INACTIVE)
+       -E : (password expiration date)
+       -l : (print password aging information)
+
+<directory and file>
+
+command : pwd (current my path)
+command : cd (changing directory)
+option .. : move to the next higher directory
+        ~ [user] : move to home directory (user directory)
+command : mkdir [directory name] (make a directory)
+option -p : make a subdirectory | ex) mkdir -p data/structure 
+       -m : appoint access authority
+
+command : rmdir [directory name] (remove a directory)
+option -p : remove a subdirectory 
+
+<file>
+1. Directory file ( d )
+2. Device file (block device file: b, character device file: c)
+3. special purpose file (symbolic link file: l, pipe file: p, socket file: s)
+4. Ordinary file ( '-' )
+
+command : ls (print a list of the file or directory)
+option -al : print all of the file included hidden file 
+
+command : chown [username] [file/directory name] (change owner`s file)
+command : chgrp [username] [file/directory name] (change group`s file)
+option -R : change all of the subdirectroy 
+
+ex) chown -R jinil.jinil /Desktop/Data structure (owner,group)
+
+<Type of permission>
+1. read permission : r (<file>: read, <directory>:  
+2. write permission : w
+3. execute permission : x
+4. prohibit : -
+
+ex) drwxr-x-rw- 
+First - authority to the owner of the file
+Second - authority to the group of the file
+Third - authority to the other user of the file 
+
+(Change of file permission)
+command : chmod [u,g,o,a] [+,-,=] [r,w,x] file`s name
+ex) chmod u+r data , chmod ug-x data 
+
+(Specify initial permission authority) - umask 
+
+# - mask 0022 (directory: 0777-0022, 0666-0022)
+$ - mask 0002 (directory: 0777-0002, 0666-0002)
+
+775 - rwxrwxr-x, 755 - rwxr-xr-x
+
+--- : 0 (000)
+--x : 1 (001)
+-w- : 2 (010)
+-wx : 3 (011)
+r-- : 4 (100)
+r-x : 5 (101)
+rw- : 6 (110)
+rwx : 7 (111)
+
+command : umask (change mask value) 
+
+pipe( | ) :  Running more than one shell command simultaneously, how to specify that the output of one command is input of another command.
+
+command : cp (copy)
+option -a : copy all of the attribute of file 
+       -b : After backup file is made, copy
+       -f : Removing the existing file, copy
+       -v : print the process of copying files
+       -i : If the files to be copied exists, the user is asked to copy it
+       -r : copy (file->file , directory->directory)
+       -u : If the file to be copied exists, the file is not copied if the file is more recently updated than the file to be copied.
+
+command : mv (file move)
+option -b : After backup file is made, file move
+       -f : Removing the existing file, move
+       -i : If the files to be moved exists, the user is asked to move it
+       -v : print the process of moving files
+
+command : rm (file remove)
+option -r : If the file to be removed is directory, Remove directory
+       -v : print the process of removing files
+       -i : Ask if you want to delete 
+       -f : Forcibly delete the file. 
+
+If you want to compress several files into one file in linux, 
+You have to create a file archive first by combining several files you want to compress into a single file 
+
+Compression in Linux consists of collection and compression separately
+
+command : tar [option] [archive_file`name.tar] [bundled file/directory] (archive produce: tape archive)
+option -c : create archive file
+       -t : Without dismantling the archive file, print the content in the monitor
+       -x : Decompose the archive file and extract the bundled file
+       -f : appoint file`name
+       -v : print the process of creating or releasing archive files
+       -u : update
+       -r : add new file in the existing archive file 
+       -z : gzip
+       -j : bzip2
+
+case 1 (create archive file) : -cvf option
+case 2 (decompose archive file) : -xvf option
+case 3 (print the content in the compressed archive file) : -tvf option
+
+command : gzip [file`name to compress] (Linux standard compression utility that compresses file size to save disk space or reduce data transfer speed)
+option -d : decompose compression
+       -v : print the process of executing the compression
+       -l : print the information of compressed file
+
+
+command : gunzip [file`name to decompose] (Decompose compressed file in the gzip)
+
+command : bzip2 [file`name to compress] (bzip2 has a higher compression rate than gzip,but the speed is lower than gzip) 
+option -d : decompose compression 
+       -v : print the process of executing the compression 
+
+command : bunzip2 [file`name to decompose] (Decompose compressed file in the gzip)
+
+----<print>---- 
+
+command : cat [text file`name] (print the content of text file on the standard output device)
+option -b : In front of the each sentence, print the number 
+       -n : print the number (included whitespace)
+       -s : If you have the continued whitespace, print the sentence to have only one whitespace 
+
+command : more [text filename] (output the contents of the file by dividing the size to one screen)  
+option -n : print to n(th) page
+       +n : print from n(th) page
+       -d : print the message to input spacebar key or q key
+
+command : head [text filename] (When printing some sentence at the beginning of a text file)
+option -c unit: appoint the bytes size to print
+       -n : print up to the (1~n)th sentence  
+
+command : tail [text filename] 
+
+----<print>----
+
+command : grep [option] [search string] [text filename] (After searching string,print the sentence included string)
+option -A number (print the number of bottom lines specified, including the search string
+       -B number (print the number of top lines specified, including the search string '
+       -c : print the number of line included the search string 
+       -i : Not divide in upper,lower case
+       -n : print the line number in the search results
+
+command : find [start path] [option] [search target] [action]
+option -maxdepth [number] : 시작경로를 기준으로 몇 단계의 하위 디렉터리까지 검색할 지를 지정한다.  
+       -name [filename] : 
+       -size [filesize] :
+       -user [USER] :  
+       -group [GROUP] : 
+       -type [file form] : 
+
+action -print :
+       -fprint [filename]: 검색한 결과를 지정한 파일로 저장(단: 이름이 같은 파일이 이미 존재할 경우 덮어쓰기를 수행)
+       -exec [명령어] {}\n; : 검색 결과에 대해 수행할 명령을 지정 
+
+ex) find /dev -maxdepth 2 -name *sd* -print , find /dev -size +3k -print
+    find / -user jinil -print , find ./ -type l -print , find ./ -size +500k -fprint result
+    find ./ -name test* -exec rm{}\;
+
+command : file [filename] (know file type)
+
+<How to give a link to a file: (Symbolic link, Hard link)>
+
+command : ln [filename] [new filename] (hard link)
+(create link of file: test1을 하드링크로 test2를 만든 경우 하나를 수정하면 다른 하나가 링크로 연결되어있어 내용이 같이 바뀌게 됨)
+command : ln -s [filename] [new filename] (symbolic link)
+(create link of file: test1을 심볼릭링크로 test2를 만든 경우 test2를 수정하면 test2의 내용은 안바뀌고 test1의 내용만 바뀌게 됨)
+
+command : sort [option] filename 
+
+command : join [option] filename1 filename2 (combine files) (정렬이 되어 있어야 가능)
+option -num1 num2: (standard: num1 value) (num2: num2(th) field)
+
+
+command : wc [option] [filename] (word count)
+option -c : character count
+       -w : word count
+       -l : sentence count
+
+command : cut [option] [filename to extract] (extract field)
+option -d"구분자" : f 옵션과 함께 사용되며, 필드를 구분할 구분자를 지정한다.
+       -f 필드번호: 파일의 특정 필드를 추출한다.
+
+command : paste [option] [filename list to combine] (combine field)
+option -d결합자: 결합할 열의 결합자를 지정   
+
+command : tee [option] filename (print the content of file in output device and create on the file)
+option -a : If the file is already existed, add the input content in the existing file
+
+
+
+
+
+
